@@ -1,0 +1,1 @@
+@keyframes pulseGlow{0%,to{box-shadow:0 0 25px #f59e0b66,inset 0 0 15px #fbbf2433}50%{box-shadow:0 0 45px #f59e0bb3,inset 0 0 25px #fbbf2466}}.gold-glow{animation:2.5s ease-in-out infinite pulseGlow}.glass-panel{-webkit-backdrop-filter:blur(16px);background:#18181bbf;border:1px solid #f59e0b40}

@@ -1,0 +1,44 @@
+{
+  "name": "lotto2",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron:dev": "electron electron/main.cjs",
+    "electron:build": "vite build && electron-builder --win --dir",
+    "electron:dist": "vite build && electron-builder --win portable"
+  },
+  "build": {
+    "appId": "com.lotto.lucky3d",
+    "productName": "3D幸運搖獎機",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*"
+    ],
+    "win": {
+      "target": ["portable", "dir"]
+    }
+  },
+  "dependencies": {
+    "cannon-es": "^0.20.0",
+    "canvas-confetti": "^1.9.4",
+    "lucide-react": "^1.47.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "three": "^0.186.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "electron": "^44.4.3",
+    "electron-builder": "^26.15.3",
+    "vite": "^8.3.0"
+  }
+}
